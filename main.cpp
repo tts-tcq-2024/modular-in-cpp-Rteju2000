@@ -1,7 +1,7 @@
 #include <iostream>
 #include <assert.h>
-#include "ColorPair.h"
-#include "ColorCoderUtils.h"
+#include "includes/ColorPair.h"
+#include "includes/ColorCoderUtils.h"
 
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
@@ -28,9 +28,6 @@ int main() {
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
     testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
-
-    // Print reference manual.
-    TelCoColorCoder::PrintColorReferenceManual();
     
     return 0;
 }
